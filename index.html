@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Phil Lin - 3D Artist & Developer. Explore my portfolio showcasing 3D modeling and programming skills.">
+    <meta name="keywords" content="3D Artist, Developer, Portfolio, 3D Modeling, Programming">
+    <meta name="author" content="Phil Lin">
+    <title>Phil's Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    
+    <nav>
+        <ul>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="top">
+        <div class="container">
+            <h1>Phil Lin</h1>
+            <p class="subtitle">3D Artist & Developer</p>
+            
+            <!-- About Me Section -->
+            <div class="about-me">
+                <p>
+                    About Me <br> Hi, I'm Phil Lin, I'm currently in High School. My dream is to attend a Ivy League School. 
+                </p>
+            </div>
+    
+            <!-- Moved Get in Touch Button -->
+            <a href="#contact" class="cta-button">Get in Touch</a>
+        </div>
+    </header>
+    
+    
+    <main class="container">
+        <section id="skills">
+            <h2>My Skills</h2>
+            <div class="skills">
+                <article class="skill-card">
+                    <i class="fas fa-cube skill-icon"></i>
+                    <h3>3D Modeling</h3>
+                    <p>Passionate about creating three-dimensional digital art and models. Bringing ideas to life through detailed 3D visualization and modeling.</p>
+                </article>
+                <article class="skill-card">
+                    <i class="fas fa-code skill-icon"></i>
+                    <h3>Programming</h3>
+                    <p>Experienced in coding and software development. Turning complex problems into elegant solutions through code. Proficient in Python, JavaScript, HTML, and CSS.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>3D Model Gallery</h2>
+            <div class="gallery-grid">
+                <figure class="gallery-item">
+                    <img src="fairy_house2.png" alt="Fairy House 3D Model">
+                    <figcaption class="overlay">
+                        <h3>Fairy House</h3>
+                        <p>More like a witch house.</p>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="maki-sushi.png" alt="Maki Sushi 3D Model">
+                    <figcaption class="overlay">
+                        <h3>Maki Sushi</h3>
+                        <p>Maki Sushi, a Japanese dish.</p>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="living_room.png" alt="Living Room 3D Model">
+                    <figcaption class="overlay">
+                        <h3>Living Room</h3>
+                        <p>Orthographic View of a Living Room.</p>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="snowglobe.png" alt="Snow Globe 3D Model">
+                    <figcaption class="overlay">
+                        <h3>Snow Globe</h3>
+                        <p>Snow Globe With Snow.</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p class="contact-subtitle">Have a project in mind? Let's collaborate! Feel free to reach out.</p>
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <i class="fas fa-comment"></i>
+                </div>
+                <button type="submit" class="submit-button">
+                    <span>Send Message</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <div class="modal" id="imageModal">
+        <img src="" alt="Full size image">
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Phil Lin. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
